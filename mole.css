@@ -1,0 +1,65 @@
+body
+{
+    text-align:center;
+    background: url("./mario-bg3.jpg");
+    background-size:cover;    
+}
+.text
+{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #000;
+    animation: color 5s infinite ;
+}
+@keyframes color {
+    0%{color: orange}
+    10%{color: purple}
+    20%{color: red}
+    30%{color: cadetblue}
+    40%{color: yellow}
+    50%{color: coral}
+    60%{color: green}
+    70%{color: cyan}
+    80%{color: deeppink}
+    90%{color: dodgerblue}
+    100%{color: orange}
+}
+.text2
+{
+     font-size: 25px;
+    color:white;
+    text-shadow: 2px 2px 4px #000;
+}
+#board
+{
+    width: 540px;   /*div tag of 540px 540px*/
+    height: 540px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    background:url("./soil.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+/*so within our board for each div tag*/
+#board div
+{
+    /* board =540px*540px and our game is a 3x3board so each tile should a 1/3rd of the width and height
+    so we are divide into 3x3 tiles--> 180x180*/
+    width: 180px;
+    height: 180px;
+    background-image: URL("./pipe.png");
+    background-size: cover;
+}
+/* our board has 9 divs each div can have an image*/
+#board div img
+{ /* all img tags inside the tile div tags*/
+    width: 100px;
+    height: 100px;
+
+}
